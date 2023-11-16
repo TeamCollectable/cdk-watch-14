@@ -142,7 +142,7 @@ class WatchableNodejsFunction extends NodejsFunction {
 
     const {entry} = props;
     if (!entry) throw new Error('`entry` must be provided');
-    const targetMatch = (props.runtime || Runtime.NODEJS_12_X).name.match(
+    const targetMatch = (props.runtime || Runtime.NODEJS_14_X).name.match(
       /nodejs(\d+)/,
     );
     if (!targetMatch) {
