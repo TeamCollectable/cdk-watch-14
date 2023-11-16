@@ -15,7 +15,6 @@
     "watch": "yarn build --watch",
     "lint": "eslint ./src --ext=.ts",
     "try": "node -r ts-node/register src/cli.ts",
-    "postinstall": "yarn build",
     "prepublishOnly": "yarn build && pinst --disable",
     "postpublish": "pinst --enable",
     "release": "standard-version",
