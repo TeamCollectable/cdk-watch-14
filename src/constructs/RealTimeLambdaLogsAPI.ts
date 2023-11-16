@@ -114,7 +114,7 @@ export class RealTimeLambdaLogsAPI extends cdk.NestedStack {
     const lambdaProps = {
       code: lambda.Code.fromAsset(websocketHandlerCodePath),
       timeout: cdk.Duration.seconds(300),
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.NODEJS_14_X,
       logRetention: logs.RetentionDays.FIVE_DAYS,
       role: disconnectLambdaRole,
       environment: {
